@@ -1,0 +1,339 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue255;\red0\green0\blue0;
+}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c1680\c19835\c100000;\csgray\c0;
+}
+\margl1440\margr1440\vieww19000\viewh9600\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 File: Lab9_dluo22.rtf\
+Name: Di Luo\
+Class: CS 325, January 2022\
+Lab: 9\
+Due data: Jan. 22, 2022\cf3 \
+\
+Exercise 1: Single-table query 1:Julia\cf4 \
+\
+MariaDB [dluo22]> SELECT * FROM imdb_actors WHERE first_name='Julia';\
++--------+------------+------------------+--------+------------+\
+| id     | first_name | last_name        | gender | film_count |\
++--------+------------+------------------+--------+------------+\
+| 572929 | Julia      | Carothers Hughes | F      |          1 |\
+| 770247 | Julia      | Roberts          | F      |          1 |\
+| 784772 | Julia      | Schuler          | F      |          1 |\
+| 806043 | Julia      | Sweeney          | F      |          1 |\
++--------+------------+------------------+--------+------------+\
+
+\f1\b 4 rows in set (0.00 sec)\
+\
+\
+
+\f0\b0 \cf3 Exercise 2: Single-table query 2: 1995-2000\cf4 \
+\
+MariaDB [dluo22]> SELECT id,name FROM imdb_movies where year>= 1995 AND year<=2000;\
++--------+----------------------------+\
+| id     | name                       |\
++--------+----------------------------+\
+|  18979 | Apollo 13                  |\
+|  46169 | Braveheart                 |\
+| 109093 | Fargo                      |\
+| 112290 | Fight Club                 |\
+| 147603 | Hollow Man                 |\
+| 207992 | Matrix, The                |\
+| 210511 | Memento                    |\
+| 237431 | O Brother, Where Art Thou? |\
+| 238695 | Office Space               |\
+| 254943 | Pi                         |\
+| 306032 | Snatch.                    |\
+| 314965 | Stir of Echoes             |\
+| 333856 | Titanic                    |\
++--------+----------------------------+\
+
+\f1\b 13 rows in set (0.01 sec)\
+\
+\
+
+\f0\b0 \cf3 Exercise 3: Single-table query 3: Fight Club\
+\
+\cf4 MariaDB [dluo22]> SELECT actor_id FROM imdb_roles WHERE movie_id=112290;\
++----------+\
+| actor_id |\
++----------+\
+|    12508 |\
+|    17438 |\
+|    17946 |\
+|    23488 |\
+|    33024 |\
+|    43967 |\
+|    46793 |\
+|    52396 |\
+|    66495 |\
+|    72356 |\
+|    86866 |\
+|    92815 |\
+|   114701 |\
+|   117395 |\
+|   122803 |\
+|   150046 |\
+|   152175 |\
+|   174382 |\
+|   180149 |\
+|   184634 |\
+|   201013 |\
+|   220339 |\
+|   247608 |\
+|   256240 |\
+|   266368 |\
+|   275713 |\
+|   281243 |\
+|   284337 |\
+|   290848 |\
+|   292815 |\
+|   304444 |\
+|   308329 |\
+|   313126 |\
+|   313969 |\
+|   323403 |\
+|   328405 |\
+|   347943 |\
+|   356562 |\
+|   367572 |\
+|   376249 |\
+|   378974 |\
+|   385911 |\
+|   389753 |\
+|   392786 |\
+|   402498 |\
+|   403180 |\
+|   406971 |\
+|   438105 |\
+|   443594 |\
+|   454061 |\
+|   469664 |\
+|   471342 |\
+|   510575 |\
+|   514278 |\
+|   553953 |\
+|   558289 |\
+|   558382 |\
+|   569014 |\
+|   572783 |\
+|   589158 |\
+|   606081 |\
+|   780070 |\
+|   793011 |\
++----------+\
+
+\f1\b 63 rows in set (0.00 sec)
+\f0\b0 \cf3 \
+\
+\
+Exercise 4: Multi-table query 1: pi\
+\
+\cf4 MariaDB [dluo22]> Select role from imdb_movies join imdb_roles on imdb_movies.id = imdb_roles.movie_id where imdb_movies.name = 'pi';\
++-------------------------+\
+| role                    |\
++-------------------------+\
+| Man Delivering Suitcase |\
+| Brad                    |\
+| Transit Cop             |\
+| Maximillian Cohen       |\
+| Kabbala Scholar         |\
+| Moustacheless Man       |\
+| Man Presenting Suitcase |\
+| Limo Driver             |\
+| Kabbala Scholar         |\
+| Photographer            |\
+| Sol Robeson             |\
+| King Neptune            |\
+| Farroukh                |\
+| Rabbi Cohen             |\
+| Kabbala Scholar         |\
+| Kabbala Scholar         |\
+| Transit Cop             |\
+| Lenny Meyer             |\
+| Kabbala Scholar         |\
+| Jake                    |\
+| Ephraim                 |\
+| Jenny Robeson           |\
+| Mrs. Ovadia             |\
+| Marcy Dawson            |\
+| Jenna                   |\
+| Jenna's Mom             |\
+|                         |\
+| Devi                    |\
++-------------------------+\
+
+\f1\b 28 rows in set (0.00 sec)
+\f0\b0 \cf3 \
+\
+\
+Exercise 5: Multi-table query 2: Pi Actor Name\
+\
+\cf4 MariaDB [dluo22]> Select first_name,last_name,role from\
+    -> imdb_actors a join imdb_roles r on a.id=r.actor_id\
+    -> join imdb_movies m on m.id = r.movie_id\
+    -> where m.name='pi';\
++------------------+------------+-------------------------+\
+| first_name       | last_name  | role                    |\
++------------------+------------+-------------------------+\
+| Abraham          | Aronofsky  | Man Delivering Suitcase |\
+| Peter            | Cheyenne   | Brad                    |\
+| Scott            | Franklin   | Transit Cop             |\
+| Sean             | Gullette   | Maximillian Cohen       |\
+| Ari              | Handel     | Kabbala Scholar         |\
+| Stanley          | Herman     | Moustacheless Man       |\
+| J.C.             | Islander   | Man Presenting Suitcase |\
+| Chris (IV)       | Johnson    | Limo Driver             |\
+| Richard          | Lifschutz  | Kabbala Scholar         |\
+| Clint            | Mansell    | Photographer            |\
+| Mark             | Margolis   | Sol Robeson             |\
+| Sal              | Monte      | King Neptune            |\
+| Ajay             | Naidu      | Farroukh                |\
+| Stephen          | Pearlman   | Rabbi Cohen             |\
+| Oren             | Sarch      | Kabbala Scholar         |\
+| Lloyd            | Schwartz   | Kabbala Scholar         |\
+| Ray              | Seiden     | Transit Cop             |\
+| Ben (II)         | Shenkman   | Lenny Meyer             |\
+| David            | Strahlberg | Kabbala Scholar         |\
+| David            | Tawil      | Jake                    |\
+| Tom (I)          | Tumminello | Ephraim                 |\
+| Lauren (I)       | Fox        | Jenny Robeson           |\
+| Joanne           | Gordon     | Mrs. Ovadia             |\
+| Pamela (II)      | Hart       | Marcy Dawson            |\
+| Kristyn Mae-Anne | Lao        | Jenna                   |\
+| Espher Lao       | Nieves     | Jenna's Mom             |\
+| Pam              | Shoaib     |                         |\
+| Samia            | Shoaib     | Devi                    |\
++------------------+------------+-------------------------+\
+
+\f1\b 28 rows in set (0.00 sec)
+\f0\b0 \cf3 \
+\
+\
+Exercise 6: Multi-table query 3: Kill Bill\
+\
+\cf4 MariaDB [dluo22]> Select first_name,last_name from imdb_actors a\
+    -> join imdb_roles r1 on r1.actor_id = a.id\
+    -> join imdb_movies m1 on m1.id = r1.movie_id\
+    -> join imdb_roles r2 on r2.actor_id = a.id\
+    -> join imdb_movies m2 on m2.id = r2.movie_id\
+    -> where m1.name = 'Kill Bill: Vol. 1'\
+    -> and m2.name = 'Kill Bill: Vol. 2';\
++-------------------+-----------+\
+| first_name        | last_name |\
++-------------------+-----------+\
+| David             | Carradine |\
+| Chia Hui          | Liu       |\
+| Michael (I)       | Madsen    |\
+| Christopher Allen | Nelson    |\
+| Michael (I)       | Parks     |\
+| Stevo             | Polyi     |\
+| Vivica A.         | Fox       |\
+| Daryl             | Hannah    |\
+| Lucy              | Liu       |\
+| Uma               | Thurman   |\
++-------------------+-----------+\cf3 \
+\
+\
+Exercise 7: More queries\
+\'95 Write a query that show the top 5 actors in imdb_small who have appeared in the most films, in descending order.\
+\cf4 MariaDB [dluo22]> Select first_name,last_name,film_count from imdb_actors order by film_count DESC limit 5;\
++-------------+-----------+------------+\
+| first_name  | last_name | film_count |\
++-------------+-----------+------------+\
+| Kevin       | Bacon     |          9 |\
+| Steve       | Buscemi   |          3 |\
+| Michael (I) | Madsen    |          3 |\
+| Bill        | Paxton    |          3 |\
+| Brad        | Pitt      |          3 |\
++-------------+-----------+------------+\
+
+\f1\b 5 rows in set (0.00 sec)
+\f0\b0 \cf3 \
+\
+\'95 Write a query that shows the top 3 most popular genres of films in imdb_small, sorted in descending order. (Hint: There is a table movies_genres that contains the columns movie_id and genre that may be able to help)\
+\cf4 MariaDB [dluo22]> select genre, count(*) as magnitude from movies_genres join imdb_movies on movies_genres.movie_id = imdb_movies.id group by genre order by magnitude DESC limit 3;\
++----------+-----------+\
+| genre    | magnitude |\
++----------+-----------+\
+| Thriller |        17 |\
+| Drama    |        17 |\
+| Crime    |        12 |\
++----------+-----------+\
+
+\f1\b 3 rows in set (0.00 sec)\
+\
+(Credits to https://stackoverflow.com/questions/7693613/select-most-common-value-from-a-field-in-mysql)
+\f0\b0 \cf3 \
+\
+\'95 Write a query that shows the name of the director who has directed the most horror films.\
+\cf4 MariaDB [dluo22]> select d.first_name,d.last_name,count(*) from directors d join movies_directors md on d.id = md.director_id join imdb_movies m on m.id = md.movie_id join movies_genres mg on mg.movie_id = m.id where mg.genre = 'Horror' group by d.first_name,d.last_name order by count(*) DESC limit 1;\
++------------+-----------+----------+\
+| first_name | last_name | count(*) |\
++------------+-----------+----------+\
+| Paul (I)   | Verhoeven |        1 |\
++------------+-----------+----------+\
+
+\f1\b 1 row in set (0.00 sec)
+\f0\b0 \cf3 \
+\
+\
+Exercise 8: CSE 143 Grades\
+\
+\cf4 MariaDB [dluo22]> Select grade from grades g\
+    -> join courses c on c.id = g.course_id\
+    -> where name = 'Computer Science 143';\
++-------+\
+| grade |\
++-------+\
+| C     |\
+| A+    |\
+| B     |\
+| D-    |\
++-------+\
+
+\f1\b 4 rows in set (0.01 sec)\
+
+\f0\b0 \cf3 \
+\
+Exercise 9: CSE 143 Grades and Names\
+\
+\cf4 MariaDB [dluo22]> Select s.name,grade from students s join grades g on s.id = g.student_id join courses c on c.id = g.course_id where c.name = 'Computer Science 143' AND g.grade <= 'B-';\
++-------+-------+\
+| name  | grade |\
++-------+-------+\
+| Lisa  | A+    |\
+| Ralph | B     |\
++-------+-------+\
+2 rows in set (0.00 sec)\cf3 \
+\
+\
+Exercise 10: All Grades\
+\
+\cf4 MariaDB [dluo22]> Select s.name,c.name,grade from students s join grades g on s.id = g.student_id join courses c on c.id = g.course_id where g.grade <= 'B-' order by s.name;\
++----------+-----------------------+-------+\
+| name     | name                  | grade |\
++----------+-----------------------+-------+\
+| Bart     | Computer Science 142  | B-    |\
+| Lisa     | Computer Science 143  | A+    |\
+| Lisa     | Computer Science 190M | A+    |\
+| Milhouse | Computer Science 142  | B+    |\
+| Ralph    | Computer Science 143  | B     |\
++----------+-----------------------+-------+\
+5 rows in set (0.00 sec)\cf3 \
+\
+\
+Exercise 11: Popular Classes\
+\
+\cf4 MariaDB [dluo22]> Select DISTINCT c.name from courses c join grades g on c.id = g.course_id join students s on s.id = g.student_id group by course_id having count(course_id) >= 2;\
++----------------------+\
+| name                 |\
++----------------------+\
+| Computer Science 142 |\
+| Computer Science 143 |\
++----------------------+\
+2 rows in set (0.00 sec)\cf3 \
+\
+}

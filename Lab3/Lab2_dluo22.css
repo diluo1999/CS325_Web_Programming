@@ -1,0 +1,38 @@
+/*
+    File: Lab2_dluo22.css
+    Name: Di Luo
+    Class: CS 325, January 2022
+    Lab: 2
+    Due data: Jan. 5, 2022
+
+    Extra styles:
+        1. cursor: when mouse is on the images (which are also links), cursor changes to pointer.
+        2. margin: adjusted margin of "Relevent Coursework" in Lab1_dluo22_colby.html
+*/
+
+.header {text-align: center;}
+
+h1[class="header"] {line-height: 30%;}
+
+h2 {font-size: 16pt;}
+
+body {background-image: url("https://imgur.com/NknNDqH.png");}
+
+#footer {text-align: center; font-family: Arial, Helvetica, sans-serif;}
+
+table, th, td {border: 1px solid black; border-collapse: collapse;}
+
+a:active {color:brown;}
+a:visited {color:gray;}
+
+td.skilled {color:green;}
+td.unskilled {color:orange;}
+
+ul {list-style: square;}
+
+col.proficiency {background-color: rgb(209, 209, 209);}
+
+/*Extra styles*/
+img {cursor: pointer;}
+
+pre {margin: 0px 0px;}

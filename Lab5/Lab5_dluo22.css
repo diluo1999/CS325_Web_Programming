@@ -1,0 +1,57 @@
+/*
+    File: Lab5_dluo22.css
+    Name: Di Luo
+    Class: CS 325, January 2022
+    Lab: 5
+    Due data: Jan. 12, 2022
+*/
+
+h1 {text-align: center;}
+
+fieldset {
+    background-color: rgb(247, 207, 252);
+    margin-left: auto; 
+    margin-right: auto; 
+    width:33%;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+}
+
+legend {
+    background-color: white;
+    border: 1px solid black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#submitDiv {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.error {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: red;
+    margin-bottom: 15px;
+}
+
+.comment_block{
+    margin-left: auto; 
+    margin-right: auto; 
+    width:50%;
+    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(211, 254, 255);
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.name{
+    text-align: right;
+}
+
+.time{
+    font-size: small;
+}

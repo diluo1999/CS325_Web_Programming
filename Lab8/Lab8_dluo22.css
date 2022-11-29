@@ -1,0 +1,19 @@
+/*
+    File: Lab8_dluo22.css
+    Name: Di Luo
+    Class: CS 325, January 2022
+    Lab: 8
+    Due data: Jan. 19, 2022
+*/
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

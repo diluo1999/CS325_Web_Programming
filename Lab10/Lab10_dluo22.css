@@ -1,0 +1,65 @@
+/*
+    File: Lab10_dluo22.css
+    Name: Di Luo
+    Class: CS 325, January 2022
+    Lab: 10
+    Due data: Jan. 25, 2022
+*/
+
+h1 {
+    text-align: center;
+    font-size: medium;
+}
+
+fieldset {
+    background-color: rgb(255, 254, 233);
+    margin-left: auto; 
+    margin-right: auto; 
+    width:20em;
+    border: 1px solid gray;
+}
+
+legend {
+    background-color: rgb(255, 254, 233);
+    border: 1px solid black;
+}
+
+input{
+    margin-bottom: 1em;
+}
+
+a {
+    display: block;
+    text-align: center;
+}
+
+table{
+    background-color: rgb(243, 244, 254);
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 1em;
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+table:first-child {
+    text-align: center;
+    font-weight: bold;
+}
+
+.number {
+    text-align: right;
+}
+
+.word {
+    text-align: left;
+}
+
+.error {
+    color: red;
+}

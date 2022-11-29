@@ -1,0 +1,45 @@
+/*
+    File: Lab3_dluo22.css
+    Name: Di Luo
+    Class: CS 325, January 2022
+    Lab: 3
+    Due data: Jan. 7, 2022
+
+    Extra styles:
+        1. opacity: make the image link dim when mouse is on the image. Now it is more obvious that the images are links.
+        2. border-radius: make the edge of border more smooth.
+        3. z-index: make positioned element (catalog) appear on the top of the other content.
+        (4. pseudo-class last-of-type: was planning to add more tables before the last one, so last-of-type can help me reach skill table easily w/o id/class.)
+*/
+
+.right_align {float: right; text-align: right;}
+
+.image:hover {opacity: 0.5;}
+
+body {background-size: 60% 60%;}
+
+.main_experience {margin-bottom:0.5em}
+.sub_experience {padding-left:0.5em}
+
+summary {
+    border: 1px dashed black;
+    margin-bottom: 1%;
+}
+
+table:last-of-type {
+    margin-left: auto; 
+    margin-right: auto; 
+    width:33%;
+}
+
+#catalog {
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 5px 5px;
+    position:fixed;
+    top:10px;
+    right:20px;
+    padding:0.3em;
+    opacity:0.8;
+    z-index:2;
+}

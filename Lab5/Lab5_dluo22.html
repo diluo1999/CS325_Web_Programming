@@ -1,0 +1,40 @@
+<!--
+    File: Lab5_dluo22.html
+    Name: Di Luo
+    Class: CS 325, January 2022
+    Lab: 5
+    Due data: Jan. 12, 2022
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title>User Comments</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="Lab5_dluo22.css" />
+    </head>
+    <body>
+        <h1>User Comments</h1>
+
+        <!-- edit .php to search for </h1> and replace it w/ comment element -->
+
+        <form action="Lab5_dluo22.php" method="post">
+            <fieldset>
+                <legend>Add a comment</legend>
+                <dl>
+                    <dt>Name</dt>
+                    <dd>
+                        <input type="text" name="name" placeholder="enter your name" />
+                    </dd>
+                    <dt>Comment</dt>
+                    <dd>
+                        <textarea name="comment" placeholder="enter a comment" rows="5" cols="50"></textarea>
+                    </dd>
+                </dl>
+                <div id="submitDiv">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>

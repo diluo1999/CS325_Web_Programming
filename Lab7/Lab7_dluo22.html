@@ -1,0 +1,76 @@
+<!-- 
+    File: Lab7_dluo22.html
+    Name: Di Luo
+    Class: CS 325, January 2022
+    Lab: 7
+    Due data: Jan. 17, 2022 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title>Diablo 2 Resurrected Player Survey</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="Lab7_dluo22.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="Lab7_dluo22.js"></script>
+    </head>
+    <body>
+        <form>
+        <div id="formBlock">
+            <h1>Diablo 2 Resurrected</h1>
+
+            <div id="formBody">
+                <h2>Player Survey</h2>
+
+                <label class="heading" for="userid">User ID</label>
+                <input type="text" name="userid" id="userid" pattern="[0-9]{8}" title="User ID has 8 digits" required/> <br />
+
+                <label class="heading" for="password">Password</label>
+                <input type="password" name="password" id="password" minlength="8" required/> <br />
+
+                <label class="heading" for="bn_tag">BattleNet Tag</label>
+                <input type="text" name="bn_tag" id="bn_tag" required/> 
+                <button id="example" type="button">Example</button><br />
+
+                <label class="heading" for="email">Email</label>
+                <input type="email" name="email" id="email"/> <br />
+
+                <label class="heading">How many characters do you have?</label>
+                <input type="radio" name="num_char" value="0" id="0" class="radio" /> 0 <br />
+                <input type="radio" name="num_char" value="1" id="1" class="radio" /> 1 <br />
+                <input type="radio" name="num_char" value="2" id="2" class="radio" /> 2 <br />
+                <input type="radio" name="num_char" value="over2" id="over2" class="radio" /> More than 2 <br />
+
+                <label class="heading" for="fav_char1">Your 1st favorite character class</label>
+                <select name="fav_char" size="4" id="fav_char1">
+                    <option value="ama">Amazon</option>
+                    <option value="nec">Necromancer</option>
+                    <option value="bar">Barbarian</option>
+                    <option value="sor">Sorceress</option>
+                    <option value="pal">Paladin</option>
+                    <option value="dru">Druid</option>
+                    <option value="ass">Assassin</option>
+                </select> <br />
+
+                <label class="heading" for="fav_char2">Your 2nd favorite character class</label>
+                <select name="fav_char" size="4" id="fav_char2">
+                    <option value="ama">Amazon</option>
+                    <option value="nec">Necromancer</option>
+                    <option value="bar">Barbarian</option>
+                    <option value="sor">Sorceress</option>
+                    <option value="pal">Paladin</option>
+                    <option value="dru">Druid</option>
+                    <option value="ass">Assassin</option>
+                </select> <br />
+
+                <label class="heading" for="hardcore">Have you ever played in Hardcore mode?</label>
+                <input type="checkbox" name="hardcore" id="hardcore" value="hardcore"> <br />
+
+                <input type="submit" value="Submit" id="submit" />
+                <input type="reset" value="Reset" />
+            </div>
+        </div>
+        </form>
+    </body>
+</html>

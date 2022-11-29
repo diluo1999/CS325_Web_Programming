@@ -1,0 +1,53 @@
+/* CSS for the 12 days of Xmas page */
+
+body {
+	background-color: #88FF88;
+}
+
+h1 {
+	background-color: #990000;
+	border: 4px solid #006600;
+	color: white;
+	font-family: "Vladimir Script", fantasy;
+	font-size: 50px;
+	margin: 10px;
+	margin-left: auto;
+	margin-right: auto;	
+	padding: 15px;
+	text-align: center;
+	width: 50%;
+}
+
+#box {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	min-width: 750px;
+}
+
+.day {
+	background-color: white;
+	border: 2px dashed green;	
+	margin: 6px;
+	padding: 10px;
+	text-align: center;
+}
+
+.number {
+	color: green;
+	font-size: 150%;
+	font-weight: bold;
+}
+
+img {
+	width: 50px;
+}
+
+#w3c {
+	clear: both;
+	float: right;
+}
+
+#w3c img {
+	border: 0px;
+}

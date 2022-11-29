@@ -1,0 +1,113 @@
+<!--
+    File: join.html
+    Name: Di Luo
+    Class: CS 325, January 2022
+    Final Project
+    Due data: Jan. 27, 2022
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" href="img/logo.ico" />
+        <title>Activities</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/join.js"></script>
+    </head>
+    <body>
+        <!-- Page header -->
+        <header id="banner">
+            <div class="container">
+                <nav class="navbar">
+                    <!-- Logo -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html"><span class="colby">Colby</span> e-NABLE</a>  
+                    </div>
+                    <!-- Navigation bar -->
+                    <div class="navbar_list">
+                        <ul>
+                            <li><a href="join.html"  style="color: rgb(120, 43, 218)"><span>JOIN</span></a></li>
+                            <li><a href="activity.html"><span>ACTIVITIES</span></a></li>
+                            <li><a href="people.html"><span>PEOPLE</span></a></li>
+                            <li><a href="index.html"><span>HOME</span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="main">
+
+            <!-- Form Title&Info -->
+            <form>
+                <div class="form_top">
+                    <p class="form_title">Colby e-NABLE</p>
+                    <p class="form_info">
+                        Please add your information to this form if you are interested in participating in the Colby e-NABLE chapter.  
+                        You can pick the activities that you want to be involved in, and we will work around your schedule when needed. 
+                        No prior experience is expected, and your participation is voluntary so you can withdraw at any point 
+                        (send me an email if you want to be removed). For more information about e-NABLE, check: 
+                        <a href="http://enablingthefuture.org/">http://enablingthefuture.org/</a>
+                    </p>
+                    <p><span>&#42; Required</span></p>
+                </div>
+
+                <div class="form_name">
+                    <label class="heading" for="name">What is your preferred full-name? <span>&#42;</span></label> <br />
+                    <input type="text" name="name" id="name" placeholder="Your answer" required/>
+                </div>
+
+                <div class="form_email">
+                    <label class="heading" for="email">What is your Colby email address? <span>&#42;</span></label> <br />
+                    <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@colby.edu$" placeholder="Your answer" required/>
+                </div>
+
+                <div class="form_tshirt">
+                    <label class="heading" for="tshirt">What is your t-shirt size?</label> <br />
+                    <select name="tshirt" size="6" id="tshirt">
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                        <option value="xxl">XXL</option>
+                    </select>
+                </div>
+
+                <div class="form_act">
+                    <label class="heading" for="act">What activities are you interested in learning and participating in?<span>&#42;</span></label> <br />
+                    <select name="act" size="7" id="act" multiple required>
+                        <option value="a">A: Managing hand sizing and 3D model dimensions</option>
+                        <option value="b">B: 3D Printing</option>
+                        <option value="c">C: Hand/arm assembly</option>
+                        <option value="d">D: Social media management and communication with people who need a prosthetic</option>
+                        <option value="e">E: Managing and restocking 3D printing tools and supplies</option>
+                        <option value="f">F: Graphic design and photography</option>
+                        <option value="g">G: Building a website for e-NABLE at Colby</option>
+                    </select>
+                </div>
+
+                <div class="form_time">
+                    <label class="heading" for="time">Are you free on Friday November 19 from 3 pm to 4 pm for training? <span>&#42;</span></label> <br />
+                    <select name="time" size="2" id="time" required>
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+
+                <div class="buttons">
+                    <input type="submit" value="Submit" id="submit" />
+                    <input type="reset" value="Reset" id="reset"/>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <a href="https://www.facebook.com/Colby-e-NABLE-Student-Chapter-104739392051163"><img src="img/facebook.png" alt="facebook.png" width=50 height=50 /></a>
+            <p>&copy; 2022 Colby College. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+<!--
+    File: index.html
+    Name: Di Luo
+    Class: CS 325, January 2022
+    Final Project
+    Due data: Jan. 27, 2022
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" href="img/logo.ico" />
+        <title>Colby e-NABLE</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/slideshow.js"></script>
+    </head>
+    <body>
+        <!-- Page header -->
+        <header id="banner">
+            <div class="container">
+                <nav class="navbar">
+                    <!-- Logo -->
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html"><span class="colby">Colby</span> e-NABLE</a>  
+                    </div>
+                    <!-- Navigation bar -->
+                    <div class="navbar_list">
+                        <ul>
+                            <li><a href="join.html"><span>JOIN</span></a></li>
+                            <li><a href="activity.html"><span>ACTIVITIES</span></a></li>
+                            <li><a href="people.html"><span>PEOPLE</span></a></li>
+                            <li><a href="index.html" style="color: rgb(120, 43, 218)"><span>HOME</span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="main">
+            <!-- Following part credits to https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Images in carousel -->
+                <div class="mySlides fade">
+                    <img class="slide_img" src="img/people.jpeg" alt="people.jpeg">
+                </div>
+            
+                <div class="mySlides fade">
+                    <img class="slide_img" src="img/activity.jpeg" alt="activity.jpeg">
+                </div>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div class="mySlides_dots">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>
+
+            <!-- Intro -->
+            <div class="intro1">
+                <p class="intro_title">About Colby e-NABLE</p>
+                <p class="intro_text1">
+                    Colby e-NABLE seeks to join the global e-NABLE community in providing free, 
+                    customizable 3D printed upper limb assistive devices to those in need. Our 
+                    team focuses on designing innovative adaptive devices and engaging with 
+                    the Colby community.
+                </p>
+            </div>
+            <div class="intro2">
+                <p class="intro_title">Executive Summary</p>
+                <p class="intro_text2">
+                    This club is structured in need-based way. Our Social Media
+                    Manager will set up a Facebook page, as is required to become an official e-NABLE
+                    chapter, and will respond to those who reach out to us in need. From there, we work
+                    with this individual to customize and build their prosthetic limb to their exact
+                    specifications, before finally giving them their new prosthetic. Our core objective is to
+                    provide a cheaper alternative to the very expensive prosthetics available today, and
+                    help those who may not be able to afford those steep prices still improve their quality of
+                    life.
+                </p>
+                <a href="https://enablingthefuture.org" id="eNable_web">Learn More About e-NABLE</a>
+            </div>
+        </div>
+
+        <footer>
+            <a href="https://www.facebook.com/Colby-e-NABLE-Student-Chapter-104739392051163"><img src="img/facebook.png" alt="facebook.png" width=50 height=50 /></a>
+            <p>&copy; 2022 Colby College. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>

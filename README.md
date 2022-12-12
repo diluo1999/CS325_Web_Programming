@@ -7,7 +7,7 @@ The repo of Di Luo's projects in CS325 Web Programming @ Colby College
 
 [Lab 2: Resume with CSS](https://htmlpreview.github.io/?https://github.com/diluo1999/CS325_Web_Programming/blob/main/Lab2/Lab1_dluo22.html)
 
-[Lab 3: Resume with CSS 2](https://github.com/diluo1999/CS325_Web_Programming/blob/main/Lab3/Lab1_dluo22.html)
+[Lab 3: Resume with CSS 2](https://htmlpreview.github.io/?https://github.com/diluo1999/CS325_Web_Programming/blob/main/Lab3/Lab1_dluo22.html)
 
 [Lab 4: PHP](https://htmlpreview.github.io/?https://github.com/diluo1999/CS325_Web_Programming/blob/main/Lab4/new.html)
 
